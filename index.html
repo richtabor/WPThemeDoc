@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html id="html" class="no-js">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<meta name="viewport" content="width=device-width"/>
+	<link rel="shortcut icon" href="http://docs.themebeans.com/_assets/favicon.ico">
+	<link rel="apple-touch-icon-precomposed" href="http://docs.themebeans.com/_assets/apple-touch-icon.png"/>
+	<title>York Pro Help Guide | ThemeBeans</title>
+    <style type="text/css">
+        body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+            margin: 0;
+            padding: 0;
+        }
+        * {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+        :before, :after {-webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+        img, object, embed {max-width: 100%; height: auto;}
+        object, embed {height: 100%;}
+        img { margin: 1.25% 0; -ms-interpolation-mode: bicubic; }
+        html {
+            background-color: #E6E8EA;
+            padding: 2%;
+        }
+        body {
+            font: 18px/1.6 "Helvetica Neue", "Helvetica", sans-serif;
+            color: #696c74;
+            max-width: 800px;
+            margin: 5% auto;
+        }
+        body::after {
+            clear: both;
+            content: "";
+            display: table;
+        }
+        header {
+            margin-bottom: 8%;
+        }
+        footer {
+            text-align: center;
+        }
+        h1, h2, h3, h4, h5, h1 a {
+            color: #263A48;
+            text-decoration: none;
+        }
+        h1, h2 {
+            font-size: 38px;
+            padding-bottom: 0.3em;
+            margin-bottom: 0.4em;
+            border-bottom: 1px solid #eee
+        }
+        h2 {
+            font-size: 22px;
+            padding-bottom: 0.6em;
+            margin-bottom: 0.6em;
+            margin-top: 2.5em;
+        }
+        h3 {
+            font-size: 18px;
+            margin-bottom: 0.3em;
+        }
+        h1 small a {
+            color: #98999C;
+            font-size: 13px;
+            font-weight: normal;
+            float: right;
+            position: absolute;
+            top: 15px;
+            right: 20px;
+        }
+        section {
+            background: #fff;
+            margin-bottom: 1%;
+            position: relative;
+            padding: 6% 8%;
+        }
+        blockquote {
+            border-left: 3px solid #d54e21;
+            font-size: 16px;
+            padding: 0 0 0 20px;
+            color: #d54e21;
+        }
+        blockquote a {
+            color: #d54e21;
+            font-weight: 500;
+        }
+        blockquote code {
+            color: #d54e21;
+        }
+        code, cite {
+            background-color: #F0F2F4;
+            border-radius: 3px;
+            color: #000;
+            font: inherit;
+            padding: 2px 7px;
+            white-space: nowrap;
+        }
+        a {
+            color: #1e8cbe;
+            text-decoration: underline;
+        }
+        a:hover {
+            color: #d54e21;
+        }
+        ul {
+            list-style: none;
+        }
+        ol {
+            list-style: number;
+        }
+        ol li {
+            color: #98999C;
+            margin-bottom: 5px;
+        }
+        ol li:last-child {
+            margin-bottom: 0;
+        }
+        p, ul, ol, blockquote  {
+            margin-bottom: 4%;
+        }
+        ul ul {
+            padding-top: 0;
+            margin-bottom: 0;
+            margin-left: 4%;
+        }
+        ul ul li:before {
+            content: '-';
+            display: inline-block;
+            padding-right: 2%;
+        }
+    
+        ul.col-2 {
+            color: #98999C;
+            -webkit-column-count: 2;
+            -moz-column-count: 2;
+            column-count: 2;
+            -webkit-column-gap: 20px;
+            -moz-column-gap: 20px;
+            column-gap: 20px;
+        }
+
+        @media screen and (min-width: 500px) {
+            ul.col-2 {
+                -webkit-column-count: 3;
+                -moz-column-count: 3;
+                column-count: 3;
+                -webkit-column-gap: 20px;
+                -moz-column-gap: 20px;
+                column-gap: 20px;
+            }
+        }
+
+        nav {
+            background: #F0F2F4;
+            min-width: 215px;
+            margin-bottom: 5px;
+            margin-top: 15px;
+        }
+        nav:first-of-type a {
+            color: #d54e21;
+            border-radius: 0;
+        }
+        nav:first-of-type a:hover {
+            color: #d54e21;
+        }
+        nav:first-of-type a:before {
+            background-color: #d54e21;
+        }
+        nav.affix {
+            position: fixed;
+            top: 20px;
+        }
+        nav.affix-bottom {
+            position: absolute;
+        }
+        nav a {
+            border-radius: 3px;
+            font-size: 15px;
+            display: block;
+            cursor: pointer;
+            font-weight: 500;
+            position: relative;
+            text-decoration: none; 
+            padding: 10px 12px;
+            width: 100%;
+            padding-right: 3px;
+            border-bottom: 2px solid #fff;
+        }
+        nav a:before {
+            content: '';
+            width: 4px;
+            display: block;
+            left: 0;
+            position: absolute;
+            height: 100%;
+            display: none;
+            background: #1e8cbe;
+            top: 0;
+        }
+        nav a:hover {
+            background-color: #E6E8EA;
+            color: #1e8cbe;
+            text-decoration: underline;
+        }   
+        nav a:hover:before {
+            display: block;
+        }
+        nav a:last-of-type {
+            border-bottom: none;
+        }
+        .gist {
+            margin-top: 5.1%;
+            margin-bottom: 5%;
+        }
+        @media screen and (max-width: 1050px) {
+            body {
+                margin: 0 auto;
+            }
+        }
+        @media screen and (max-width: 767px) {
+            header span {
+                display: none;
+            }
+            h1 {
+                font-size: 26px;
+            }
+            h2 {
+                font-size: 20px;
+            }
+        }   
+        @media screen and (max-width: 514px) {
+            p, ul, ol, blockquote  {
+                margin-bottom: 8%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+	
+	<section id="Menu">
+		<header>
+			<h1>York Pro <span>Help Guide</span></h1>
+			<p>Set-up & general guide to help you get the most out of your new WordPress theme. If you are still having trouble after reading this guide, <a href="https://themebeans.com/support">contact our help team</a>.</p>
+		</header>
+
+		<nav>
+			<a href="http://demo.themebeans.com/york" target="blank">Live Demo</a>
+			<a href="http://demo.themebeans.com/wp-content/themes/york-pro/changelog.txt">Changelog</a>
+			<a href="https://themebeans.com/checkout?edd_action=add_to_cart&download_id=105665">Buy York Pro</a>
+		</nav>
+		<nav>
+			<a href="#GettingStarted">Getting Started</a>
+			
+			<a href="#Navigation">Navigation</a>
+
+	        <a href="#Templates">Templates</a>
+
+	        <a href="#Portfolio">Portfolio</a>
+	          
+	        <a href="#Contact">Contact</a>
+
+	        <a href="#Widgets">Widgets</a>
+	        
+	        <a href="#Customizer">Customizer</a>
+	         
+	        <a href="#Plugins">Plugins</a>
+	         
+	        <a href="#Retina">Retina</a>
+	        
+	        <a href="#Updates">Updates</a>
+	         
+	        <a href="#ThemeLicenseKey">Theme License</a>
+
+            <a href="#YorkProChildTheme">York Pro Child Theme</a>
+	        
+	        <a href="#Developers">Developers</a>
+	        
+	        <a href="#Credits">Credits</a>
+	  
+		</nav>
+	</section>
+
+
+
+
+	<section id="GettingStarted">
+
+		<h1><a href="#GettingStarted">Getting Started</a><small><a href="#html">Back to Top</a></small></h1>
+
+		<p>This document covers the installation, set up, and use of this theme, and provides answers and solutions to common problems. We encourage you to first read this document thoroughly if you are experiencing any difficulties before contacting our support team.</p> 
+
+		<h2>York Pro</h2>
+		<p>This help guide also covers features that are only available in the <code>Pro Version</code> of York. If you're interested in upgrading to pro, <a href="https://themebeans.com/?p=107440">click here to learn more about the new features</a> or <a href="https://themebeans.com/checkout?edd_action=add_to_cart&download_id=105665">go ahead and purchase York Pro for only $59.</a></p>
+		
+		<p>York Pro has many more customization options including typographic selectors, stylistic color pickers and other add-ons. And in addition to these fantastic features, you'll also receive dashboard one-click updates and access to world-class theme support by our team of in-house professional WordPress developers.</p>
+
+		<blockquote>Please note that support is only offered for York Pro. If you already have a Pro license and have any questions that are beyond the scope of this document, feel free to ask us via our dedicated <a href="https://themebeans.com/support" target="blank">help center</a>.</blockquote>
+
+		<h2>WordPress Upload</h2>
+		<p>To upload through your Dashboard, select “Appearance” and then “Themes”. Next, select the “Install Themes” tab at the top of the page and then select the “Upload” link, right above the search field. Choose your file and select “Install Now”. Once the theme is fully uploaded and installed, click “Activate” to activate the WordPress theme.</p>
+		<blockquote>The theme files will be stored on your server in the <code>wp-content/themes</code> location.</blockquote>
+		<p>When uploading your theme with the installer, please ensure you are uploading the theme .zip file, not the entire package you downloaded. In this case, you will be uploading york.zip.</p>
+
+		<h2>FTP Upload</h2>
+		<p>To manually upload your new WordPress theme, login with your credentials to your website and locate the wp-content folder in your WordPress install files. Upload the <b>un-zipped</b> York folder into the: wp-content/themes folder. </p>
+		<p>Once uploaded, activate the theme by heading to the “Themes” menu in the WordPress Dashboard. Locate the York theme and hit “Activate”.</p>
+		
+		<h2>Customizer Options Import</h2>
+		<p>Located inside the <code>/customizer</code> folder within the package contents, you'll find a york-export.dat file. This file contains the live demo's Theme Customizer options.</p><p>To import, first install and activate the <a href="https://wordpress.org/plugins/customizer-export-import/">Customizer Export/Import WordPress</a> plugin, which is available as a free download. After you're successfully running the plugin, head to your Theme Customizer and look for the <cite>Export/Import</cite> section.</p><p>Import the <code>york-export.dat</code> file with the uploader within that section and hit "Import".</p>
+		
+		<img src="images/customizer-import.jpg">
+
+		<p>Find out more on <a href="#PluginInstallation">installing and activating plugins</a>.</p>
+
+		<h2>Premium Theme Setup</h2>
+		<p>If you're looking for WordPress theme installation and setup to look exactly like the live theme demo - then we're here to help. Fast & simple for only $89.</p>
+
+		<p><a href="https://themebeans.com/checkout?edd_action=add_to_cart&download_id=44250&edd_options[price_id]=2" target="blank">Get the advanced Theme Setup service &rarr;</a></p>
+
+		<p>Our in-house team of professional developers will install the theme, upload the demo XML file, and setup your website exactly like the live demo. Frustration free. Complete your purchase of the Theme Setup service by clicking the link above and send us your deliverables.</p>
+
+		<h3>Deliverables:</h3>
+		<ul>
+		<li>Domain name</li>
+		<li>FTP information</li>
+		<li>WordPress admin credentials</li>
+		<li>Theme files or ThemeForest item purchase code</li>
+		</ul>
+
+		<h2>Theme Support</h2>
+		<p>If you have a problem with the theme or found a bug, please let us know via our official <a href="https://themebeans.com/support">Help Center</a>. We take pride in our customer support and we will do what we can to assist you. If you are experiencing a theme issue, please first turn off all third party plugins to see if the problem persists.</p>
+		<blockquote>Please note that support is only offered for York Pro. If you already have a Pro license and have any questions that are beyond the scope of this document, feel free to ask us via our dedicated <a href="https://themebeans.com/support" target="blank">help center</a>.</blockquote>
+
+	</section>	
+
+
+
+
+	<section id="Navigation">
+
+		<h1><a href="#Navigation">Navigation</a><small><a href="#html">Back to Top</a></small></h1>
+		<p>It is rather important to set your theme menu in the WordPress Dashboard. To do this, locate the Menu options by selecting the “Appearance” tab from the dashboard sidebar and then “Menus”.</p>
+		<p>Once you’re viewing the Menus, create a new menu and save it. After you’ve saved the menu, you can add it to a menu via the Menu Settings, below the Menu Structure area. Add your pages and links to the menu you just created in the Menu Structure area.</p>
+
+		<img src="images/menus.jpg">
+        
+        <h2>Footer Menu</h2>
+        <p>Add a footer menu to your webite simply by creating a menu and assigning it to the <cite>Footer Menu</cite> location - as described above.</p>
+
+        <h2>Social Menu</h2>
+        <p>The Social Menu is populated in both the site footer and sidebar elements of the theme. The social icons added to your menu will automatically populate in the site footer. To add the icons, simply create a custom link to the social media location and York Pro will do the rest.</p>
+        
+        <p>To also display the inputted social icons in the sidebar, simply check the Navigational Social Icons checkbox within the <cite>Customizer > Settings > Header</cite> section.</p>
+        
+        <img src="images/social.jpg">
+
+        <p>The following social media icons <b>are supported</b>:</p>
+        <ul class="col-2">
+            <li>500px</li> 
+            <li>Bandsintown</li>
+            <li>Behance</li> 
+            <li>CodePen</li>
+            <li>Dribbble</li> 
+            <li>Dropbox</li>
+            <li>Email</li> 
+            <li>Facebook</li>
+            <li>Flickr</li>
+            <li>Foursquare</li>
+            <li>Github</li>
+            <li>Google Play</li>
+            <li>Google</li>
+            <li>Houzz</li>
+            <li>Instagram</li>
+            <li>iTunes</li>
+            <li>Linkedin</li>
+            <li>Medium</li>
+            <li>Meetup</li>
+            <li>Pinterest</li>
+            <li>Rdio</li>
+            <li>Reddit</li>
+            <li>RSS</li>
+            <li>Smugmug</li>
+            <li>Sound Cloud</li>
+            <li>Spotify</li>
+            <li>Squarespace</li>
+            <li>Stumbleupon</li>
+            <li>Tumblr</li>
+            <li>Twitch</li>
+            <li>Twitter</li>
+            <li>Vevo</li>
+            <li>Vimeo</li>
+            <li>Vine</li>
+            <li>Vsco</li>
+            <li>Yelp</li>
+            <li>Youtube</li>
+        </ul>
+
+	</section>	
+
+
+
+
+	<section id="Templates">
+
+		<h1><a href="#Templates">Templates</a><small><a href="#html">Back to Top</a></small></h1>
+		<p>York has the following templates built into the theme and can be applied by creating and saving a page in WordPress.</p>
+		<ul>
+            <li>Default Template</li>
+			<li><a href="#ContactTemplate">Contact Template</a></li>
+			<li><a href="#Portfolio">Portfolio Template</a></li>
+		</ul>
+
+        <h2>Entry Header Animation</h2>
+        <p>Below is an example of the animation code deployed on the York Pro demo. Simply add this to the <cite>Entry Header</cite> textarea within the "Page Settings" metabox (located beneath the page editor). Modify the text and add <code>&lt;b&gt;</code> elements as needed.</p>
+
+        <script src="https://gist.github.com/richtabor/4a1ef83f336bd7d428d8a35e2df5e5f0.js"></script>
+
+	</section>	
+
+
+
+
+	<section id="Portfolio">
+
+		<h1><a href="#Portfolio">Portfolio</a><small><a href="#html">Back to Top</a></small></h1>
+		
+        <h2>Portfolio Plugin Installation</h2>
+        <p>To install the Bean Portoflio plugin, head over to our website and simply download the free <a href="http://themebeans.com/plugins/bean-portfolio/" target="blank">Bean Portfolio</a> WordPress plugin.</p>
+
+        <p>Once you’ve successfully downloaded the zip file, head to your WordPress Dashboard and select <cite>Plugins > Add New > Upload.</cite> Add the zipped file in the field there and click <cite>Upload</cite>.</p>
+
+        <p>Upon a successful upload, you’ll be prompted to activate the plugin. You’ll then see a new <cite>Portfolio</cite> tab in your WordPress Dashboard Sidebar. Creating portfolio posts is done exactly the same as standard posts.</p>
+
+		<h2>Creating your Portfolio Page</h2>
+		<p>You need to first create a page using the Portfolio Template. This template will pull your published portfolio posts. The example below utilizes our WordPress theme, <a href="https://themebeans.com/themes/mark">Mark</a> - but it's the same process as York Pro.</p>
+
+        <img src="images/static-front-page.gif">
+
+		<h2>Featured Images</h2>
+		<p>Upload a featured image - any size will work. The images will be automatically applied throughout all the neccessary templates and loops.</p>
+    
+        <h2>Grid Thumbnail Size</h2>
+        <p>Within the Portfolio Settings metabox, you may set the grid size for your portfolio project's featured image - that's used on the portfolio templates. There are four options: small, medium, large and xtra-large.</p>
+
+		<h2>Gallery Images</h2>
+		<p>This is where you will add your images to the post by clicking the "Browse & Upload" button. You have the capability to rearrange, caption, add more and remove images from the popup modal that appears.</p><p>Just remember to hit <cite>Save Gallery</cite> and you're all set.</p>
+		
+		<a href="images/gallery-images.jpg"><img src="images/gallery-images.jpg"></a>
+        
+        <h2>Portfolio Captions</h2>
+        <p>You may add captions to your portfolio gallery image uploads within the Edit Gallery modal (the same modal where you orignially uploaded images to your portfolio post). Just add your caption to the "Caption this image" text box directly below each image, and your caption will appear on the portfolio post.</p>
+        
+        <img src="images/captions.jpg">
+
+		<h2>Portfolio Post Formats</h2>
+		<p>York is capable of outputting gallery and video portfolio posts (embedded - e.g. Vimeo & YouTube). To change the type of portfolio to display, click on the checkboxes under the "Portfolio Format" metabox, located beneath the Portfolio Categories, on the right hand side of your window.</p>
+
+		<blockquote>Mix or match video and gallery posts on the same post.</blockquote>
+
+		<a href="images/portfolio-post-formats.jpg"><img src="images/portfolio-post-formats.jpg"></a>
+
+		<h2>Portfolio Meta</h2>
+		<p>Each portfolio post has selectable meta options that you may choose to use on each individual post. You can set the date, client, role, url, elect to display the categories, tags, views and the portfolio post title.</p>
+
+		<p>You can also add an external URL to which your post loop will link to a different URL than it's single post page. For example, you can create a post with a featured image and an external link to your Behance project page - then promote that project within the portfolio templates.</p>
+
+		<a href="images/gallery-images.jpg"><img src="images/gallery-images.jpg"></a>
+
+		<h2>Portfolio Options</h2>
+		<p>Located within the Theme Customizer you will find a Portfolio section. Here you may elect to enable the singular portfolio loop, portfolio sorting, lazy-loading, photoswipe and enter your portfolio count.</p>
+
+		<img src="images/cta.jpg">
+
+	</section>
+
+
+
+
+	<section id="Contact">
+
+		<h1><a href="#Contact">Contact</a><small><a href="#html">Back to Top</a></small></h1>
+		<p>To set up the Contact Template, simply create a page using the "Contact" template and publish it. Within the Customizer's Theme Options panel you'll find a <cite>Contact</cite> section. This is where you'll add your contact email address and customize the Contact Button if you wish.<p/>
+		
+		<img src="images/customizer-contact.jpg">
+
+	</section>
+
+
+
+
+	<section id="Widgets">
+
+		<h1><a href="#Widgets">Widgets</a><small><a href="#html">Back to Top</a></small></h1>
+		<ul>
+            <li>Clients Widget</li>  
+            <li>Profile Widget</li> 
+			<li>Flickr Widget</li>
+			<li>Portfolio Menu Widget</li>	 
+			<li>Video Embed Widget</li>
+		</ul>
+		
+		<h2>Bean Plugin Widgets</h2>
+		<p>The following widgets are provided with our compatible array of <a href="https://themebeans.com/plugins">free plugins</a>.</p>
+		
+		<ul>
+			<li>Bean Tweets Widget</li>
+			<li>Bean Instagram Widget</li>
+			<li>Bean Social Widget</li>
+			<li>Bean Dribbble Widget</li>
+			<li>Bean 500px Widget</li>
+		</ul>				
+
+		<h2>Using the Widgets</h2>
+		<p>To employ a widget, simply go to your Widgets editor (located in your WordPress Dashboard in the “Appearance” menu) and drag your widgets into the specified widget areas.</p>
+		
+	</section>
+
+
+
+
+	<section id="Customizer">
+
+		<h1><a href="#Customizer">Customizer</a><small><a href="#html">Back to Top</a></small></h1>
+		<p>To access the live Customizer, you may select the Customize button in the admin bar dropdown or select <code>"Customize"</code> from the Dashboard menu. Note that you must be logged in as a site administrator in order to access the controls.</p>
+
+		<img src="images/options.gif">
+
+		<h2>Theme Options</h2>
+		<h3>1. Title</h3>
+		<p>Set your site title, tagline, logo and the site icon. You can also elect to retina-fy your logo.</p>
+
+		<h3>2. Header</h3>
+		<p>Turn off/on the sidebar flyout as well as the social navigational icons in the flyout. Also modify these colors: site title, site title hover, navigation icon, navigation icon hover and social icons.</p>
+
+		<h3>3. Portfolio</h3>
+		<p>Decide if you'd like the gallery lazy loading active and the Photoswipe lightbox on. Enable the "Next" portfolio navigation feature. Lastly, enter the number of posts you'd like displayed originally on your portfolio template. Regarding colors, you may modify the overlay and overlay text colors.</p>
+
+        <img src="images/overlay-colors.gif">
+		<br><br>
+		
+        <h3>4. Contact</h3>
+		<p>Set your contact form email address and customize the form submit button.</p>
+
+		<h3>5. Footer</h3>
+		<p>Turn on/off the "Powered by York Pro". Enable the Footer Call to Action and all relevant options. There's also all footer styling options to select the text color, link hover color, and social icons color.</p>
+		
+        <img src="images/footer-cta.jpg">
+        <br><br>
+
+		<h2>Customizer Styles & Fonts</h2>
+		<h3>1. Colors</h3>
+		<p>Easily manipulate the theme accent color and other elements throughout the theme with the color picker in this tab.</p>
+
+		<h3>2. CSS3 Filter</h3>
+		<p>Within the <cite>Portfolio</cite> section of the Customizer, you'll find a select field to set an optional CSS3 Filter value (Black & White and Sepia). If activated, your portfolio items will default with the selected filter active.</p>
+
+		<h3>3. Typography</h3>
+		<p>Easily modify the fonts throughout the theme - choosing from the entire Google fonts library.</p>
+
+	</section>
+
+
+
+
+	<section id="Plugins">
+
+		<h1><a href="#Plugins">Plugins</a><small><a href="#html">Back to Top</a></small></h1>
+		<p>To install any of our free plugins, head over to our website and simply download the plugin files. Once you’ve successfully downloaded a zip file, head to your WordPress Dashboard and select “Plugins > Add New > Upload.”</p><p>Add the zipped file in the field there and click “Upload.” Upon a successful upload, you’ll be prompted to activate the plugin.</p>
+
+		<h2>ThemeBeans Plugins</h2>
+		<p>York is compatible with many of our custom developed WordPress Plugins. Head over to our website and <a href="https://themebeans.com/plugins" target="blank">download our free plugins now &rarr;</a></p>
+
+		<ul>
+			<li>Bean Portfolio <small> - required plugin</small></li>
+			<li>Bean Shortcodes</li>
+			<li>Bean Tweets</li>
+			<li>Bean Instagram</li>
+			<li>Bean Social</li>
+			<li>Bean 500px</li>
+			<li>Bean Dribbble</li>	
+			<li>Bean Pricing Tables</li>
+			<li>Bean Registry</li>
+		</ul>
+		
+	</section>
+
+
+
+
+
+    <section id="Retina">
+
+        <h1><a href="#Retina">Retina</a><small><a href="#html">Back to Top</a></small></h1>
+        <p>Each graphical asset has an associated retina image that should be modified when customizing assets in this theme. You will find these retina assets in their respective image locations.</p>
+        <p>Additionally, if the image size has changed, the background-size property of the associated class in /style.css must be modified to reflect those changes. You can find this in the Retina CSS section at the very bottom of the main stylesheet.</p>
+
+        <h2>Retina Logo</h2>
+        <p>Easily retina-fy your logo simply by selecting the "Enable retina logo" checkbox within the Site Title Customizer panel. When this option is checked, your logo will load 50% of it's orignial width, so ensure that you upload a logo twice the size that you'd like presented.</p>
+        
+        <img src="images/logo.jpg">
+
+    </section>  	
+
+
+
+
+	<section id="Updates">
+
+		<h1><a href="#Updates">Updates</a><small><a href="#html">Back to Top</a></small></h1>
+		<p>If you've requested and entered your theme license key, then you'll automatically be notified of any theme updates as we push them. This is the most effective method for getting updates pushed to you quickly and effienctly. <a href="#LicenseKey">Read more about theme licenses.</a></p>
+		
+		<h2>Check for Updates</h2>
+		<p>To check your theme version, click the live changelog link below and check the version number at the top of the changelog.txt file:</p>
+		<p><a href="http://demo.themebeans.com/wp-content/themes/york-pro/changelog.txt" target="blank">View the York theme changelog &rarr;</a></p>
+		<p>Relay the changelog version at the top of that changelog.txt file with the version in your WordPress Dashboard > Appearance > Themes section to see if your theme files are up to date.</p>
+
+		<p>If you are in need of the update, download the current build from the location you purchased the theme from (either ThemeForest, Creative Market or via your account dashboard) to install the updated theme.</p>
+
+		<blockquote>If you have an active license key applied to your theme, you will receive live update notifications to which allows one-click updates directly from your WordPress dashboard.</blockquote>
+
+		<h2>FTP Updating</h2>
+		<p>If you have not customized the original theme files then you may simply drop the updated theme folder contents into the theme folder on your server – which is located in wp-content/themes/york.</p>
+		<p>If you wish to upload the entire updated theme as a separate theme, ensure you:</p>
+		<ul>
+			<li>Rename the updated theme’s folder (different from the current theme)</li>
+			<li>Drop the renamed theme folder into wp-content/themes</li>
+			<li>Switch to the new theme via your WordPress Dashboard</li>
+		</ul>
+		<p>If you choose to upload the whole theme and switch to it, you may lose your Theme Customizer data and will have to add those back in.</p>
+		
+		<h2>FTP Selective Updating</h2>
+		<p>On the other hand, if you have customized some files in the core theme contents, you should consider selective updating, which simply means updating only the files that are pointed out in the theme’s changelog.</p>
+		<p>There are a couple programs out there that will allow you to compare versions of files, in order to catch customizations you may not remember. Some recommended programs are <a href="http://winmerge.org/">WinMerge</a> (Windows), <a href="http://www.kaleidoscopeapp.com/">Kaleidoscope</a> (OSX), and handy GitHub <a href="http://mac.github.com/">(OSX)</a> & <a href="http://windows.github.com/">(Windows)</a>.</p>
+
+		<h2>Recommended</h2>
+		<p>Overall, the safest and cleanest way to update your theme is to leave your currently modified theme on your server/site as is, rename the folder of the newly updated theme, upload the new theme, and modify that to match your original custom work. In this way, if something has gone wrong with the new version, you’re just a few clicks away from getting things back to how they originally were.</p>
+
+		<blockquote>Please note that ThemeBeans is not responsible for content loss, database errors and such, which may happen to your WordPress install upon an incorrectly applied theme update.</blockquote>
+
+	</section>
+
+
+
+
+	<section id="ThemeLicenseKey">
+
+		<h1><a href="#ThemeLicenseKey">Theme License Key</a><small><a href="#html">Back to Top</a></small></h1>
+		<p>Once you've <b>located your license key on your purchase receipt</b>, you may enter the key on the "Theme License" dashboard widget, located on your <code>WP Dashboard</code>.</p><p>Once your license key is entered, hit the "Save License" button - then the "Activate" button that appears after the page refreshes. Upon a successful activation you’ll see a green “Active” tag next to the widget title.</p>
+
+		<blockquote>Please note that licenses are only given for York Pro - not the free version.</blockquote>
+
+		<img src="images/license.jpg">
+
+		<h2>What is the license key for?</h2>
+		<p>It is important to keep your license up to date in order to continue getting updates for your ThemeBeans WordPress theme and support for any issues you may encounter. Renewing your license grants you access to support and updates for six months, including all updates for bug fixes and feature introductions.</p><p>Without a valid theme license, you will be unable to get support and receive theme updates.</p>
+		
+		<blockquote>If your key is not applied after hitting the Activate button, simply re-enter the key and try again. Sometimes it takes a few tries to properly establish a connection with the activation server.</blockquote>
+
+		<h2>What if my license key has expired?</h2>
+		<p>License keys may be renewed at a discount on our website. You will get a renewal notification in the license key dashboard widget if your license is about to expire, or has indeed expired.</p>
+		
+	</section>
+
+
+
+    
+    <section id="YorkProChildTheme">
+        
+        <h1><a href="#YorkProChildTheme">York Pro Child Theme</a><small><a href="#html">Back to Top</a></small></h1>
+        <p>A child theme is a theme that inherits the functionality and styling of another theme, called the parent theme. Child themes are <b>the recommended way of modifying an existing theme</b>.</p>
+
+        <h2>Why use a Child Theme?</h2>
+        <p>There are one main reason why you would want to use a child theme: <b>If you modify a theme directly and it is updated, then your modifications <u>WILL</u> be lost.</b> By using a child theme you will ensure that your modifications are preserved.</p>
+        
+        <h2>Installing the Child theme</h2>
+        <p>Log in to your site's administration panel, and go to Administration Panels > Appearance > Themes. Click "Add New" and follow the directions to upload the <cite>york-pro-child.zip</cite> file, located in the <cite>york-pro-package/theme/</cite> folder.</p><p>Next simply click "Activate" and both the York Pro theme and York Pro child theme will be active on your WordPress site. Now you're ready to customize away.</p>
+
+        <blockquote>Note that this is the same exact method we referred to in the <a href="#GettingStarted">Getting Started</a> section of this guide. You should see your child theme listed and ready for activation.</blockquote>
+
+        <h2>Customizing Template Files</h2>
+        <p>If you want to change more than just the stylesheet, your child theme can override any file in the parent theme: simply include a file of the same name in the child theme directory, and <u>it will override the equivalent file</u> in the parent theme directory when your site loads.</p><p>For instance, if you want to change the PHP code for the site header, you can include a header.php in your child theme's directory, and that file will be used instead of the parent theme's header.php.</p>
+
+        <h2>Child Theme Functions.php</h2>
+        <p>Unlike style.css, the functions.php of a child theme does not override its counterpart from the parent. Instead, it is loaded in addition to the parent’s functions.php. (Specifically, it is loaded right before the parent’s file.)</p>
+
+        <p>In that way, the functions.php of a child theme provides a smart, trouble-free method of modifying the functionality of a parent theme.</p>
+        
+        <h2>Adding PHP Functions</h2>
+        <p>Say that you want to add a PHP function to your theme. The fastest way would be to open the york-pro/functions.php file and put the function there... <b>But that’s not smart:</b> The next time York Pro is updated, your function will disappear (as the entire contents of the /york-pro/ folder are replaced upon an update.</p><p>However, there is an alternative way which is the smart way: you can create a child theme, add a functions.php file in it, and add your function to that file. The function will do the exact same job from there too, with the advantage that it will not be affected by future updates of the parent theme.</p>
+
+        <blockquote><b>DO NOT</b> copy the full content of functions.php of the parent theme into functions.php in the child theme. It's not a good practice by any means.</blockquote>
+        
+        <h2>Modifiying PHP Functions</h2>
+        <p>You can use this same exact methodology to modify functions that are within the parent theme's files. Let's take a quick look at an example.</p>
+
+        <p>Below is an example of a typical function within most of our WordPress themes - a template tag that pulls in the site archives.</p>
+
+        <script src="https://gist.github.com/richtabor/c2a8df58824504fb06da0e77e4db34c6.js"></script>
+
+        <p>Say you wanted to change the titles of each section (<em>Monthly, Yearly, Categories</em>). You would find this function (located in the york-pro/inc/template-tags.php file) then copy it over to the child theme like such:</p>
+            
+        <script src="https://gist.github.com/richtabor/34887856b1192088de0ca0585e8876b2.js"></script>
+
+        <p>And then edit the text as you see fit. This function will load before the one in the theme, which is pluggable —that is, replaceable by a child theme— conditionally. </p>
+        
+        <blockquote>Note that this example is for this specifcic function, buy you can do the same with any pluggable function that contains the following:</blockquote>
+        
+        <script src="https://gist.github.com/richtabor/2df4e1cd55bd0c99620014e2fc655ae9.js"></script>
+
+        To learn more, read the <a href="https://codex.wordpress.org/Child_Themes" target="_blank">this article on the WordPress Codex &rarr;</a>
+
+    </section>
+
+
+
+
+	<section id="Developers">
+
+		<h1><a href="#Developers">Developers</a><small><a href="#html">Back to Top</a></small></h1>
+		<p>If you'd like to add another menu location to use in the theme, search for the <code>york_setup</code> function in your theme's functions.php file and copy that whole function to your child theme.</p>
+
+		<p>Within the <code>york_setup</code> function you'll see the standard <a href="https://developer.wordpress.org/reference/functions/register_nav_menus/" target="blank">register_nav_menus</a> function. Simply create another copy/paste another line with a unique location identifiers and name. The code below creates two separate menus locations that are selectable via the <code>WP Dashboard > Appearance > Menu</code> page. </p>
+
+		<script src="https://gist.github.com/richtabor/57104857bede24c7bc8a.js"></script>
+
+		<h3>Adding your menu to the theme.</h3>
+		<p>Now that you've created the menu, you can use it in your theme's files. As always, we suggest utilizing a child theme to make file modifications.</p>
+
+		<p>The code below is an example of the <a href="https://developer.wordpress.org/reference/functions/wp_nav_menu/" target="blank">wp_nav_menu</a> function that displays your created navigation window. There is quite a few parameters associated with this function, so take a look at it's official <a href="https://developer.wordpress.org/reference/functions/wp_nav_menu/" target="blank">reference</a> to see all that you can do.</p>
+
+		<script src="https://gist.github.com/richtabor/f83dca778d3f330012d0.js"></script>		
+
+		<h2>Add Image Sizes</h2>
+		<p>If you'd like to add another image size for your WordPress instance to automatically size for, search for the <code>york_setup</code> function in your theme's functions.php file and copy that whole function to your child theme (if you have not already done so).</p>
+
+		<p>You'll want to look for <code>add_image_size</code> within the <code>york_setup</code> function and copy/paste a new line in. Below is an example of the <code>add_image_size</code> function.</p>
+
+		<script src="https://gist.github.com/richtabor/1f84b7e974907a6f8338.js"></script>
+
+		<p>Note that the first numeral value is the image's width and the second is the height. <a href="https://developer.wordpress.org/reference/functions/add_image_size/" target="blank">Read more</a> about the parameters of the <code>add_image_size</code> function on the WordPress reference site.</p>
+
+		<h3>Using image_size in your theme.</h3>
+		<p>It's pretty simple to utilize your new image size within your theme templates. Here's an example using the above <code>add_image_size</code> function.</p>
+
+		<script src="https://gist.github.com/richtabor/c0351b6b6c435a5466fd.js"></script>
+
+		<blockquote>Note that you will need to <a href="https://wordpress.org/plugins/regenerate-thumbnails/" target="blank">regenerate your images</a> if you're trying to create an image size for images already uploaded to your WordPress Media Library.</blockquote>
+
+	</section>
+
+
+
+
+    <section id="Credits">
+        <footer>
+            <a href="https://themebeans.com/themes/york-pro" target="blank">York Pro</a>, a <a href="https://themebeans.com" target="blank">ThemeBeans</a> theme developed by <a href="http://richtabor.com" target="blank">Rich Tabor</a>
+        </footer>
+    </section>
+
+
+
+
+</body>
+</html>
