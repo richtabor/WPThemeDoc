@@ -6,10 +6,12 @@ Easily create beautiful, simple to use, and easily extendable documentation for 
 Read: [Beautiful Theme Documentation with WPThemeDoc](http://richtabor.com/wpthemedoc/)
 
 ### Setup
+WPThemeDoc is straight HTML, but it utilizes a few "Find and Replace" variables so it's that much easier to plug in your relevant data. Simply conduct a search and replace the following: 
+
 - [ ] @@name - York Pro
-- [ ] @@purchaseUrl - https://themebeans.com/checkout?edd_action=add_to_cart&download_id=105665
-- [ ] @@demoUrl - https://themebeans.com/checkout?edd_action=add_to_cart&download_id=105665
-- [ ] @@supportURL - https://themebeans.com/support
+- [ ] @@purchaseUrl - https://themebeans.com/checkout/
+- [ ] @@demoUrl - http://themebeans.com/york-pro/
+- [ ] @@supportURL - https://themebeans.com/support/
 
 
 
