@@ -1,8 +1,14 @@
 # WPThemeDoc
-WordPress Theme Documentation Starter Kit
-
-A beautiful, simple to use and easily extendable documentation template for WordPress themes.
+Easily create beautiful, simple to use, and easily extendable documentation for your WordPress themes.
 
 ![WPThemeDoc](/images/preview.jpg?raw=true "WPThemeDoc")
 
-Read: [Beautiful WordPress Theme Documentation with WPThemeDoc](http://richtabor.com/wpthemedoc/)
+Read: [Beautiful Theme Documentation with WPThemeDoc](http://richtabor.com/wpthemedoc/)
+
+
+@@name - York Pro
+@@purchaseUrl - https://themebeans.com/checkout?edd_action=add_to_cart&download_id=105665
+@@demoUrl - https://themebeans.com/checkout?edd_action=add_to_cart&download_id=105665
+
+
+
