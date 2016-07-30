@@ -9,6 +9,7 @@ Read: [Beautiful Theme Documentation with WPThemeDoc](http://richtabor.com/wpthe
 WPThemeDoc is straight HTML, but it utilizes a few "Find and Replace" variables so it's that much easier to plug in your relevant data. Simply conduct a search and replace the following: 
 
 - [ ] `@@name` - York Pro
+- [ ] `@@slug` - york-pro
 - [ ] `@@purchaseUrl` - https://themebeans.com/checkout/
 - [ ] `@@demoUrl` - http://themebeans.com/york-pro/
 - [ ] `@@supportUrl` - https://themebeans.com/support/
