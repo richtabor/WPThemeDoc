@@ -18,3 +18,10 @@ WPThemeDoc is straight HTML, but it utilizes a few "Find and Replace" variables 
 You'll need to add or remove your own sections, but that's easy to do as well - with minimal code.
 
 Add a link in the `header nav` element, like this: `[<a href="#Developers">Developers</a>]` and then add a `section` below with the same ID, like this: `[<section id="Developers">]`. Then just add your content!
+
+## Contribute
+If you have any suggestions, ideas, and the like - let me know!
+
+##License & Copyright
+
+GPL v2.0 or later. Copyright (C) 2016 Rich Tabor http://richtabor.com/
