@@ -1,3 +1,4 @@
+## My Wordpress Project
 # WPThemeDoc
 Easily create beautiful, simple to use, and easily extendable documentation for your WordPress themes.
 
